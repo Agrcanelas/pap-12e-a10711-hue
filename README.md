@@ -14,11 +14,11 @@
 Sistema de gestão de biblioteca online que permite aos utilizadores pesquisar livros, fazer reservas e gerir o seu perfil de leitor.
 
 ## 🎯 Objetivos Principais
-- [ ] Desenvolver um site dinâmico com base de dados
-- [ ] Implementar sistema de autenticação de utilizadores
-- [ ] Criar interface responsiva e intuitiva
-- [ ] Implementar funcionalidade CRUD completa
-- [ ] Fazer deploy da aplicação
+- [X] Desenvolver um site dinâmico com base de dados
+- [X] Implementar sistema de autenticação de utilizadores
+- [X] Criar interface responsiva e intuitiva
+- [] Implementar funcionalidade CRUD completa
+- [] Fazer deploy da aplicação
 
 ## 🛠️ Stack Tecnológica
 
