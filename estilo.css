@@ -1,0 +1,137 @@
+/* ============================================
+   MOTAS USADAS - LAYOUT HORIZONTAL (IMAGEM + INFO)
+   Adicionar isto NO FINAL do ficheiro estilo.css
+   ============================================ */
+
+/* Lista de motas */
+.motas-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+/* Card horizontal da mota */
+.mota-card-horizontal {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: stretch;
+    overflow: hidden;
+    min-height: 280px;
+}
+
+/* Lado da imagem */
+.mota-imagem-lado {
+    position: relative;
+    flex: 0 0 400px;
+    max-width: 400px;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.mota-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mota-card-horizontal:hover .mota-foto {
+    transform: scale(1.05);
+}
+
+/* Badge sobre a imagem */
+.badge-sobre-imagem {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Lado da informação */
+.mota-info-lado {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.mota-info-lado h3 {
+    font-size: 1.8rem;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+/* Info da mota - atualizada */
+.mota-card-horizontal .mota-info {
+    margin: 15px 0;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.mota-card-horizontal .mota-info p {
+    margin: 12px 0;
+    font-size: 1rem;
+}
+
+/* Descrição da mota */
+.mota-card-horizontal .mota-descricao {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.mota-card-horizontal .mota-descricao p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Badges atualizados */
+.badge-disponivel,
+.badge-sobre-imagem.badge-disponivel {
+    background: #28a745;
+    color: white;
+}
+
+.badge-reservada,
+.badge-sobre-imagem.badge-reservada {
+    background: #ffc107;
+    color: #000;
+}
+
+.badge-vendida,
+.badge-sobre-imagem.badge-vendida {
+    background: #dc3545;
+    color: white;
+}
+
+/* Responsividade */
+@media(max-width: 968px) {
+    .mota-card-horizontal {
+        flex-direction: column;
+    }
+    
+    .mota-imagem-lado {
+        flex: 0 0 300px;
+        max-width: 100%;
+        height: 300px;
+    }
+    
+    .mota-info-lado h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .mota-imagem-lado {
+        height: 250px;
+    }
+}
