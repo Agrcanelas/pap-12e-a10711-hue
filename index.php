@@ -1,3 +1,10 @@
+<html>
+<head>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    
+
 <?php
 require_once 'configconexao.php';
 require_once 'funcoestickets.php';
@@ -59,3 +66,5 @@ include 'includesnav.php';
 </main>
 
 <?php include 'includesfooter.php'; ?>
+</body>
+</html>
